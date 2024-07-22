@@ -19,4 +19,12 @@ export const signUp = (email, password) => {
             console.log(error);
     });
 };
+
+export const signOut = () => {
+    auth()
+        .signOut()
+        .then(() => {
+            ToastAndroid.show('Signed out!', ToastAndroid.SHORT);
+    });
+};
         
