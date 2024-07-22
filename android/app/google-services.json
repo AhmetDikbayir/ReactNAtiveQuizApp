@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "236174955622",
+    "project_id": "quizappwithfirebase-c4cce",
+    "storage_bucket": "quizappwithfirebase-c4cce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236174955622:android:93d7fae5c0cdf7283549a7",
+        "android_client_info": {
+          "package_name": "com.quizapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEUhQv9D8zS3n0XYMfL8tMnBl-rnRVAL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

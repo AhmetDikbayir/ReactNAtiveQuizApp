@@ -4,15 +4,16 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { COLORS } from '../constants/theme';
 import FormInput from '../components/shared/FormInput';
 import FormButton from '../components/shared/FormButton';
+import { signIn } from '../utils/auth';
 
-export default function SignInScreen() {
+export default function SignInScreen({navigation}) {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleOnSubmit = () => {
         if(email!=='' && password!=''){
-            //Sign in
+            signIn(email, password);
         }
     }
   return (
@@ -56,9 +57,10 @@ export default function SignInScreen() {
             style={{width: '100%'}}/>
 
         {/* Footer*/}
-        <View style={{flexDirection: 'row', alignItems: 'center'}}>
+        <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 20}}>
             <Text>Don't have an account</Text>
-            <Text style={{marginLeft: 4, color: COLORS.primary}}>Create account</Text>
+            <Text style={{marginLeft: 4, color: COLORS.primary}}
+            onPress={() => navigation.navigate('SignUpScreen')}>Create account</Text>
         </View>
 
     </SafeAreaView>

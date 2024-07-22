@@ -15,6 +15,7 @@ const FormButton = ({
         paddingVertical: 10,
         backgroundColor: isPrimary ? COLORS.primary : COLORS.white,
         borderWidth: 1,
+        width: '100%',
         borderColor: COLORS.primary,
         borderRadius: 5,
         ...style
